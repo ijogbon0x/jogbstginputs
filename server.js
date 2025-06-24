@@ -48,3 +48,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+const cors = require('cors');
+// Add this before your route handlers:
+app.use(cors());
